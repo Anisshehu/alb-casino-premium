@@ -1,6 +1,7 @@
 let balance = 1000;
 let jackpot = 12494;
 let symbols = ["🍒","💎","🔥","⭐","🎰"];
+let spinning = false;
 
 function updateBalance(){
     document.getElementById("balance").innerHTML = "Balance: €" + balance;
@@ -10,18 +11,22 @@ function updateJackpot(){
     document.getElementById("jackpot").innerHTML = jackpot;
 }
 
+// Live jackpot counter
 setInterval(function(){
-    jackpot += Math.floor(Math.random() * 10);
+    jackpot += Math.floor(Math.random() * 8);
     updateJackpot();
 }, 2000);
 
 document.getElementById("spinBtn").addEventListener("click", function(){
+
+    if(spinning) return;
 
     if(balance < 50){
         showModal("❌ Not enough balance!");
         return;
     }
 
+    spinning = true;
     balance -= 50;
     updateBalance();
 
@@ -62,6 +67,7 @@ document.getElementById("spinBtn").addEventListener("click", function(){
 
         updateBalance();
         updateJackpot();
+        spinning = false;
 
     }, 2000);
 });
