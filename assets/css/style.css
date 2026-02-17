@@ -45,7 +45,26 @@ h1{
 }
 
 .game-box{
-    margin-top:40px;
+    .games{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+.game-card{
+    background:#111;
+    padding:30px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 0 10px rgba(0,255,204,0.2);
+}
+
+.game-card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #00ffcc;
+}
 }
 
 #balance{
