@@ -95,6 +95,30 @@ footer{
     border-radius:8px;
     cursor:pointer;
     font-weight:bold;
+.jackpot-box{
+    margin-top:30px;
+    font-size:22px;
+    color:#ffcc00;
+    font-weight:bold;
+}
+
+.deposit-box button{
+    margin-top:20px;
+    padding:10px 25px;
+    background:gold;
+    border:none;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.flash{
+    animation: flashWin 0.5s alternate 6;
+}
+
+@keyframes flashWin{
+    from { background:#111; }
+    to { background:#003300; }
 }
 
 .modal{
