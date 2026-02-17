@@ -1,4 +1,36 @@
-body{
+body{.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#111;
+    box-shadow:0 0 15px #00ffcc;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:#00ffcc;
+}
+
+.logo{
+    font-weight:bold;
+    color:#00ffcc;
+}
+
+.register-btn{
+    background:#00ffcc;
+    padding:6px 15px;
+    border-radius:6px;
+    color:black !important;
+    font-weight:bold;
+}
     margin:0;
     font-family:Arial, sans-serif;
     background:linear-gradient(180deg,#0f0f1a,#1a1a2e);
