@@ -1,3 +1,16 @@
+function fakeLogin(){
+    alert("Login successful (Demo)");
+    window.location.href = "index.html";
+}
+
+function fakeRegister(){
+    alert("Account created (Demo)");
+    window.location.href = "login.html";
+}
+
+function resetPassword(){
+    alert("Reset link sent (Demo)");
+}
 let balance = 1000;
 let jackpot = 12494;
 let symbols = ["🍒","💎","🔥","⭐","🎰"];
