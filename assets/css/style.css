@@ -1,1 +1,74 @@
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#0f0f1a,#1a1a2e);
+    color:white;
+    text-align:center;
+}
 
+header{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    background:rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:gold;
+}
+
+.vip-badge{
+    background:gold;
+    color:black;
+    padding:5px 12px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+.hero{
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.primary-btn{
+    padding:15px 40px;
+    background:gold;
+    border:none;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.primary-btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px gold;
+}
+
+.jackpot{
+    padding:50px 20px;
+    background:rgba(255,255,255,0.05);
+}
+
+#jackpotAmount{
+    font-size:28px;
+    color:gold;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+footer{
+    padding:20px;
+    background:#0a0a15;
+}
